@@ -1,0 +1,30 @@
+package com.example.automationclient.controller;
+
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+public class ExampleControllerTest {
+
+
+    ExampleController exampleController = new ExampleController();
+
+    @Test
+    @Tag(name = "swagger")
+    @Operation(summary = "Test Swagger UI Generation")
+    @ApiResponses(value = {})
+    void testSwaggerUI() throws Exception {
+    }
+
+    @Test
+    @Tag(name = "unit")
+    @Operation(summary = "hello")
+    @ApiResponses(value = {})
+    void testHello() throws Exception {
+    }
+}
+
+//Generated with love by TestMe :) Please report issues and submit feature requests at: http://weirddev.com/forum#!/testme
