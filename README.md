@@ -13,6 +13,15 @@ Hardcoded template to test initial Controller class as is:
 package ${PACKAGE_NAME};
 #end
 
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.MvcResult;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
